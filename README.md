@@ -21,3 +21,11 @@ Instructions to Stop & Destroy:
 - docker system prune -a
 
 ```
+
+
+
+
+# References
+- https://github.com/nishanttotla/DockerStaticSite/blob/master/README.md
+- https://hub.docker.com/_/nginx 
+

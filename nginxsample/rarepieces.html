@@ -1,0 +1,52 @@
+<html>
+<head>
+    <a href="index.html">
+    <img src="logo4.png" alt="Supreme Fans Logo" width="140" height="90">
+    </a>
+    <link href = "myStyle.css" rel = "stylesheet" type = "text/css" >
+</head>
+<body>
+    <ul>
+        <li class="sMenu"><a style href="index.html"> Home</a></li>
+        <li id="current" class = "sMenu"><a style href="rarepieces.html"> Rare Pieces </a></li>
+        <li class = "sMenu"><a href="artistCollabs.html"> Artist Collabs </a></li>
+        <li class = "sMenu"><a href="timer.html"> Timer </a></li>
+        <li class = "sMenu"><a href="contacts.html"> Contacts </a></li>
+	</ul>
+
+    <div class = "column">
+    <div class="imageContainer">
+        <img src="bogo2.jpg" alt= "image of box logo" style="width:40% ; height: 40%">
+        <div class = txt>
+            <h4><a href="bogo.html"> Supreme Box Logos </a></h4>
+        </div>
+    </div>
+    <div class="imageContainer">
+        <img src="rare.jpg" alt= "image of Supreme anorak" style="width: 40%; height: 40%">
+        <div class = txt>
+        <h4 onclick="link()"> Supreme Camera / Anoraks </h4>
+        </div>
+    </div>
+    <div class="imageContainer">
+        <img src="shoes3.jpg" alt= "image of Supreme and Air shoes" style="width: 40%; height: 40%">
+        <div class = "txt">
+        <h4 onclick="link()"> Supreme x Nike </h4>
+        </div>
+    </div>
+    </div>
+    
+    <script>
+        var curr = document.getElementById("current");
+        curr.style.backgroundColor="red";
+        
+        function link(){
+            alert("Link has not been fully implemented yet");
+        }
+    </script>
+    
+    
+    
+	<footer>Disclaimer : This is just a dummy site to showcase certain technologies
+    </footer>
+</body> 
+</html>

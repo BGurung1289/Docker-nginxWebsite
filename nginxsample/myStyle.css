@@ -1,0 +1,197 @@
+/*Body*/
+body {
+	background-color : black;
+	margin: 10px auto;
+	padding: 25px;
+	line-height: 1.5em;
+	width: 98%;
+	max-width: 980px;
+	min-width: 250px;
+	text-align: center;
+	color: white;
+    font-family: Courier New, Courier, Monaco;
+    
+}
+/*Header*/
+header {
+width: 100%;
+text-align: center;
+}
+
+/* For the main menu*/
+.menu{
+    letter-spacing:5px;
+    margin: 10px 0px;
+    width: 200px;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    text-decoration:none;
+    backface-visibility: hidden;
+}
+.menu:hover{
+    background-color: red;
+        }
+
+a:visited, a:link
+{
+   color: #ffffff;
+    text-decoration: none;
+}
+/*For the disclaimer*/
+h6{
+    position: absolute; bottom: 5px;
+}
+/*For the side menu*/
+.sMenu{
+    position:relative; right: 100px; top: 70px;
+    letter-spacing:5px;
+    margin: 10px 0px;
+    width: 150px;
+    text-decoration:none;
+}
+/*smenu highlight*/
+.sMenu :hover{
+    background-color: red;
+}
+
+/*links*/
+.link:hover{
+    background-color: red;
+}
+/*footer */
+footer {
+    position: fixed;
+    width: 100%;
+    left: 12px;
+    bottom: 0px;
+    text-align: center;
+    color: gray;
+    border: black;
+    font-size: 11pt;
+    background-color: black;
+}
+*{box-sizing:border-box}
+
+ul{
+    list-style-type:none;
+}
+
+.history{
+    width:50%;
+    position: relative; top: -150;left: 240px;
+    vertical-align: middle;
+}
+.imageContainer{
+    position: relative;top: -200;left: 40px;
+}
+
+.txt {
+    max-width: 700px;
+    max-height: 400px;
+    position: absolute;
+    width:100%;
+    margin:50px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding-left: 20px;
+    padding-top:26%;
+    bottom:0px;
+    top:30px;
+    font-size: 15pt;
+    visibility: hidden;
+}
+
+.imageContainer:hover .txt{
+    visibility: visible;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+
+.column img{
+    margin: 20px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.c iframe{
+    margin:10px;
+    margin-top: 15px;
+    width:40%;
+    position: relative; bottom: 100px;
+    vertical-align: middle;
+}
+
+.link:hover{
+    background-color: red;
+}
+
+.t{
+    background-color:red;
+    width: 170px;
+    float: right;
+    
+}
+.contacts{
+    position: relative; left:350px;bottom: 160px;
+    vertical-align: middle;
+    width: 250px;
+}
+
+.title{
+    width: 300px;
+    position: relative; top: -150px; left: 300px;
+}
+
+/*Timer Tips Button*/
+.button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {background-color: red}
+
+.button:active {
+    background-color: red;
+    transform: translateY(2px);
+}
+.section{
+    position: fixed;top:160px; right:30px;
+    width:80%;
+    margin: 10px;
+    overflow: auto;
+}
+.p1,.p2{
+    font-size: 2em;
+    animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.p1{
+    animation-name: slidein1;
+}
+.p2{
+    animation-name: slidein2;
+}
+@keyframes slidein1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes slidein2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}

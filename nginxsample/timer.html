@@ -1,0 +1,72 @@
+<html>
+<head>
+    <a href="index.html">
+    <img src="logo4.png" alt="Supreme Fans Logo" width="140" height="90">
+    <link href = "myStyle.css" rel = "stylesheet" type = "text/css" >
+</a>
+</head>
+<body>
+    <ul>
+        <li class="sMenu"><a style href="index.html"> Home</a></li>
+        <li class = "sMenu"><a style href="rarepieces.html"> Rare Pieces </a></li>
+        <li class = "sMenu"><a style href="artistCollabs.html"> Artist Collabs </a></li>
+        <li id = "current" class = "sMenu"><a style href="timer.html"> Timer </a></li>
+        <li class = "sMenu"><a style href="contacts.html"> Contacts </a></li>
+	</ul>
+    <p class = "t" id="timer"></p>
+    <div class="title">
+    <h4> Top Tips for Supreme </h4>
+    <p id="a">Press Supreme Tips for Tips</p>
+    <button class="button" onclick="tip()"> Supreme Tips </button>
+    </div>
+        
+    <footer>Disclaimer : This is just a dummy site to showcase certain technologies
+    </footer>
+    
+    <script>
+        // Sets a highlight on the page link that the user is currently on
+        var curr = document.getElementById("current");
+        curr.style.backgroundColor="red";
+        
+    
+        var countDownDate = new Date("Dec 14, 2017 11:00:00").getTime();
+
+        var x = setInterval(function() {
+
+            var today = new Date().getTime();
+    
+            var diff = countDownDate - today;
+    
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    
+            // Output the result in an element with id="demo"
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "SUPREME DROPPED!!";
+            }
+            else if(days > 7){
+                document.getElementById("timer").innerHTML = "Not Dropping any time soon"
+                    }
+        }, 1000);
+        var tips = ["1. Check DropList on Supreme Community", "2. Make sure autofill is enabled on the Supreme website", "3. Select form of payment and sufficient funds", " 4. Start refreshing the page at 10:59 ", "5. Buy Supreme"];
+        var i = 0;
+        function tip(){
+            if(i<5){
+            document.getElementById("a").innerHTML = tips[i];
+            i++;
+            }
+            else{
+                i=0;
+            }
+        }
+    </script>
+</body>
+    
+</html>

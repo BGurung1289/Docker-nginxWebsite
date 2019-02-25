@@ -13,3 +13,11 @@ Instructions:
 ```
 
 Once these instructions are completed, visit the ``` localhost:8080 ``` in the browser.
+
+
+Instructions to Stop & Destroy:
+```
+- docker stop <name_of_container>
+- docker system prune -a
+
+```
